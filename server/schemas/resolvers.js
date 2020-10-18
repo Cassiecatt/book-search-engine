@@ -1,7 +1,7 @@
 //import User model
 const { User } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
-const { signtoken, signToken } = require("../utils/auth");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   //Query
