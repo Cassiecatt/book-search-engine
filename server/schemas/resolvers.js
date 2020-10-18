@@ -8,6 +8,7 @@ const resolvers = {
   Query: {
     me: async (parent, args, context) => {
       //check if user is authenicated
+      //_id : id given when a document is created
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id }).select(
           "-__v -password"
