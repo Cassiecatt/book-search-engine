@@ -1,9 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import apolloProvider - react-hooks
+//import Apollo client
+
+
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+//create instance of new ApolloClient
+
+//wrap App with <ApolloProvider client={client}> ... </ApolloProvider>
 function App() {
   return (
     <Router>
