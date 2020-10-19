@@ -18,7 +18,7 @@ const client = new ApolloClient({
       },
     });
   },
-  uri: "http://localhost:3001/graphql", //using just graphql gives a proxy error
+  uri: "/graphql", //using just graphql gives a proxy error
 });
 
 function App() {
